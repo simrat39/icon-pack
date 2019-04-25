@@ -1,47 +1,36 @@
 language: android
-sudo: true 
-
+sudo: true
 env:
   global:
-    - COMPILE_SDK_VERSION=28 
-    - BUILD_TOOLS_VERSION=28.0.3
-
+  - COMPILE_SDK_VERSION=28
+  - BUILD_TOOLS_VERSION=28.0.3
 android:
   components:
-    - tools # Update android-sdk (also called android-sdk-tools)
-    - platform-tools
-    - tools # Write the second time to update to thes newest as described in the document
-    - build-tools-${BUILD_TOOLS_VERSION} # For building
-    - android-${COMPILE_SDK_VERSION} # For building
-    - extra-android-m2repository # Support library
-    - android-28
-
-# whitelist
+  - tools
+  - platform-tools
+  - tools
+  - build-tools-${BUILD_TOOLS_VERSION}
+  - android-${COMPILE_SDK_VERSION}
+  - extra-android-m2repository
+  - android-28
 branches:
   only:
-    - master
-
+  - master
 before_install:
+- openssl aes-256-cbc -K $encrypted_8f253f28794a_key -iv $encrypted_8f253f28794a_iv
+  -in icon-pack.jks.enc -out icon-pack.jks -d
 - chmod +x gradlew
-
-before_install:
-- chmod +x gradlew
-
-script: ./gradlew assembleDebug
-
+script: "./gradlew assembleDebug"
 install:
-  - sdkmanager --list || true # Debug / Observation
-  - echo y | sdkmanager "platforms;android-27"
-  - avdmanager --list || true  # Debug / Observation
-
+- sdkmanager --list || true
+- echo y | sdkmanager "platforms;android-27"
+- avdmanager --list || true
 before_deploy:
-  - chmod +x scripts/changelog.sh
-  - cp app/build/outputs/apk/debug/*.apk SimsIconPack-$TRAVIS_BUILD_NUMBER.apk
-
-
+- chmod +x scripts/changelog.sh
+- cp app/build/outputs/apk/debug/*.apk SimsIconPack-$TRAVIS_BUILD_NUMBER.apk
 deploy:
-  - provider: script
-    skip_cleanup: true
-    script: "sh scripts/deploy-telegram.sh"
-    on:
-      branch: master
+- provider: script
+  skip_cleanup: true
+  script: sh scripts/deploy-telegram.sh
+  on:
+    branch: master

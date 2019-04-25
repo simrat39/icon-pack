@@ -3,17 +3,29 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "amirz.googleicons"
+        applicationId "simrat39.gradicons"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 9
         versionName "v9"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
+    signingConfigs {
+        travis {
+            storeFile file("icon-pack.jks")
+            storePassword System.getenv("keystore_alias_password")
+            keyAlias "key0"
+            keyPassword System.getenv("keystore_password")
+
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.travis
         }
     }
     applicationVariants.all {

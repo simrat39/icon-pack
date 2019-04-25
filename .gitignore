@@ -6,5 +6,7 @@
 /captures
 .externalNativeBuild
 .project
+.gradle/
+.gradle
 .settings/
 .classpath
