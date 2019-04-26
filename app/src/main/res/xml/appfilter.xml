@@ -17,8 +17,31 @@
     <item component="ComponentInfo{com.android.vending/.AssetBrowserActivity}" drawable="playstore" />
 
     <item component="ComponentInfo{com.android.camera/.Camera}" drawable="camera" />
-
-    <item component="ComponentInfo{com.google.android.GoogleCamera/com.android.camera.CameraLauncher}" drawable="gcamera" />
+    <item component="ComponentInfo{com.google.android.GoogleCamera/com.android.camera.CameraLauncher}" drawable="camera" />
+    <item component="ComponentInfo{com.android.camera/.CameraEntry}" drawable="camera"/>
+    <item component="ComponentInfo{com.android.camera2/com.android.camera.CameraLauncher}" drawable="camera"/>
+    <item component="ComponentInfo{com.footej.camera/.CameraActivity}" drawable="camera" />
+    <item component="ComponentInfo{net.sourceforge.opencamera/.MainActivity}" drawable="camera" />
+    <item component="ComponentInfo{com.asus.camera/.CameraApp}" drawable="camera"/>
+    <item component="ComponentInfo{com.essential.klik/.Camera}" drawable="camera" />
+    <item component="ComponentInfo{com.mediatek.camera/com.android.camera.CameraLauncher}" drawable="camera" />
+    <item component="ComponentInfo{com.htc.camera2/.CameraEntry, com.htc.camera/.CameraEntry}" drawable="camera"/>
+    <item component="ComponentInfo{com.huawei.camera/com.huawei.camera}" drawable="camera"/>
+    <item component="ComponentInfo{com.lge.camera/.CameraAppLauncher}" drawable="camera"/>
+    <item component="ComponentInfo{com.lenovo.scg/.camera.CameraLauncher}" drawable="camera"/>
+    <item component="ComponentInfo{com.thundersoft.ucam/com.android.camera.CameraLauncher}" drawable="camera" />
+    <item component="ComponentInfo{com.motorola.camera/.Camera}" drawable="camera" />
+    <item component="ComponentInfo{com.motorola.cameraone/com.motorola.camera.Camera}" drawable="camera" />
+    <item component="ComponentInfo{com.motorola.camera1/com.motorola.camera.Camera}" drawable="camera" />
+    <item component="ComponentInfo{com.motorola.camera2/com.motorola.camera.Camera}" drawable="camera" />
+    <item component="ComponentInfo{com.nextbit.camera/.ui.CameraActivity}" drawable="camera" />
+    <item component="ComponentInfo{com.oneplus.camera/.OPCameraActivity}" drawable="camera"/>
+    <item component="ComponentInfo{com.oppo.camera/.Camera}" drawable="camera" />
+    <item component="ComponentInfo{com.sec.android.app.camera/.Camera}" drawable="camera"/>
+    <item component="ComponentInfo{com.sonyericsson.android.camera/.CameraActivity}" drawable="camera"/>
+    <item component="ComponentInfo{org.cyanogenmod.snap/com.android.camera.CameraLauncher}" drawable="camera" />
+    <item component="ComponentInfo{org.lineageos.snap/com.android.camera.CameraLauncher}" drawable="camera" />
+    <item component="ComponentInfo{org.codeaurora.snapcam/com.android.camera.CameraLauncher}" drawable="camera" />
 
     <item component="ComponentInfo{com.android.messaging/.ui.conversationlist.ConversationListActivity}" drawable="messages" />
 
