@@ -7,6 +7,16 @@
 
     <item component="ComponentInfo{com.android.dialer/.DialtactsActivity}" drawable="dialer" />
     <item component="ComponentInfo{com.android.dialer/.app.DialtactsActivity}" drawable="dialer" />
+    <item component="ComponentInfo{com.asus.contacts/com.android.contacts.activities.DialtactsActivity}" drawable="dialer" />
+    <item component="ComponentInfo{com.android.incallui/.DialerLauncher}" drawable="dialer" />
+    <item component="ComponentInfo{com.android.contacts/.activities.DialtactsActivity}" drawable="dialer" />
+    <item component="ComponentInfo{com.lenovo.ideafriend/.alias.DialtactsActivity}" drawable="dialer" />
+    <item component="ComponentInfo{com.android.dialer/com.oneplus.contacts.activities.OPDialtactsActivity}" drawable="dialer" />
+    <item component="ComponentInfo{com.samsung.android.contacts/com.android.dialer.DialtactsActivity}" drawable="dialer" />
+    <item component="ComponentInfo{com.sonymobile.android.dialer/com.android.dialer.DialtactsActivity}" drawable="dialer" />
+    <item component="ComponentInfo{com.sonymobile.android.dialer/com.android.dialer.app.DialtactsActivity}" drawable="dialer" />
+    <item component="ComponentInfo{com.android.contacts/.activities.TwelveKeyDialer}" drawable="dialer" />
+    <item component="ComponentInfo{com.google.android.dialer/.extensions.GoogleDialtactsActivity}" drawable="dialer" />
 
     <item component="ComponentInfo{com.instagram.android/.activity.MainTabActivity}" drawable="instagram" />
     <item component="ComponentInfo{com.instagram.boomerang/.BoomerangActivity}" drawable="instagram" />
