@@ -18,7 +18,7 @@ branches:
   - master
 before_install:
 - openssl aes-256-cbc -K $encrypted_8f253f28794a_key -iv $encrypted_8f253f28794a_iv
-  -in icon-pack.jks.enc -out icon-pack.jks -d
+  -in simrat39.jks.enc -out simrat39.jks -d
 - chmod +x gradlew
 script: "./gradlew assembleDebug"
 install:

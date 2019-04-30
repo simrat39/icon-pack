@@ -12,25 +12,32 @@ android {
     }
 
     signingConfigs {
-        travis {
-            storeFile file("icon-pack.jks")
-            storePassword System.getenv("keystore_alias_password")
-            keyAlias "key0"
-            keyPassword System.getenv("keystore_password")
+        debug {
 
         }
     }
 
+    def isRunningOnTravis = System.getenv("CI") == "true"
+
+    if (isRunningOnTravis) {
+        signingConfigs.debug.storeFile = file("../simrat39.jks")
+        signingConfigs.debug.storePassword = System.getenv("keystore_password")
+        signingConfigs.debug.keyAlias = System.getenv("keystore_alias")
+        signingConfigs.debug.keyPassword = System.getenv("keystore_alias_password")
+    }
+
     buildTypes {
-        release {
+        debug {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.travis
+            if (isRunningOnTravis) {
+                signingConfig signingConfigs.debug
+            }
         }
     }
     applicationVariants.all {
         variant -> variant.outputs.all {
-            outputFileName = "GoogleIcons-${variant.name}.apk"
+            outputFileName = "SimsIconPack-${variant.name}.apk"
         }
     }
 }
