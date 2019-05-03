@@ -54,6 +54,14 @@
     <item component="ComponentInfo{org.codeaurora.snapcam/com.android.camera.CameraLauncher}" drawable="camera" />
 
     <item component="ComponentInfo{com.android.messaging/com.android.messaging.ui.conversationlist.ConversationListActivity}" drawable="messages" />
+    <item component="ComponentInfo{com.android.mms/.ui.ConversationList}" drawable="messages" />
+    <item component="ComponentInfo{com.android.mms/.ui.BootActivity}" drawable="messages" />
+    <item component="ComponentInfo{com.htc.sense.mms/.ui.ConversationList}" drawable="messages" />
+    <item component="ComponentInfo{com.lenovo.ideafriend/.alias.MmsActivity}" drawable="messages" />
+    <item component="ComponentInfo{com.motorola.messaging/com.android.messaging.ui.conversationlist.ConversationListActivity}" drawable="messages" />
+    <item component="ComponentInfo{com.samsung.android.messaging/com.android.mms.ui.ConversationComposer}" drawable="messages" />
+    <item component="ComponentInfo{com.sonyericsson.conversations/.ui.ConversationListActivity}" drawable="messages" />
+    <item component="ComponentInfo{com.android.mms/.ui.MmsTabActivity}" drawable="messages" />
 
     <item component="ComponentInfo{com.brave.browser/com.google.android.apps.chrome.Main}" drawable="brave" />
 
