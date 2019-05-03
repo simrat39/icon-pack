@@ -71,4 +71,6 @@
 
     <item component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.VoiceSearchActivity}" drawable="google" />
 
+    <item component="ComponentInfo{com.android.settings/com.android.settings.Settings}" drawable="settings" />
+
 </resources>
