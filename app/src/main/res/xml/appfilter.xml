@@ -72,4 +72,11 @@
 
     <item component="ComponentInfo{com.android.settings/com.android.settings.Settings}" drawable="settings" />
 
+    <item component="ComponentInfo{com.android.calculator2/.Calculator}" drawable="calculator" />
+    <item component="ComponentInfo{com.asus.calculator/.Calculator}" drawable="calculator" />
+    <item component="ComponentInfo{com.oneplus.calculator/.Calculator}" drawable="calculator" />
+    <item component="ComponentInfo{com.sec.android.app.calculator/.calculator.Calculator}" drawable="calculator" />
+    <item component="ComponentInfo{com.sec.android.app.popupcalculator/.Calculator}" drawable="calculator" />
+    <item component="ComponentInfo{com.miui.calculator/.cal.CalculatorActivity}" drawable="calculator" />
+
 </resources>
