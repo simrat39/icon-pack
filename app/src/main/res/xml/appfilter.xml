@@ -105,5 +105,6 @@
 
     <item component="ComponentInfo{com.google.android.gm/com.google.android.gm.ConversationListActivityGmail}" drawable="gmail" />
 
+    <item component="ComponentInfo{com.reddit.frontpage/com.reddit.frontpage.StartActivity}" drawable="reddit" />
 
 </resources>
