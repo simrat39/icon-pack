@@ -134,4 +134,6 @@
 
     <item component="ComponentInfo{com.twitter.android/com.twitter.android.StartActivity}" drawable="twitter" />
 
+    <item component="ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.home.HomeActivity}" drawable="photos" />
+
 </resources>
