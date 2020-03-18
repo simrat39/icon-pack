@@ -150,7 +150,8 @@
     <item component="ComponentInfo{com.oppo.alarmclock/com.oppo.alarmclock.AlarmClock}" drawable="clock" />
     <item component="ComponentInfo{com.sec.android.app.clockpackage/com.sec.android.app.clockpackage.ClockPackage}" drawable="clock" />
     <item component="ComponentInfo{com.sonyericsson.organizer/com.sonyericsson.organizer.Organizer}" drawable="clock" />
-    <item component="ComponentInfo{com.android.deskclock/com.android.deskclock/.DeskClockTabActivity}" drawable="clock" />
+    <item component="ComponentInfo{com.android.deskclock/com.android.deskclock.DeskClockTabActivity}" drawable="clock" />
 
+    <item component="ComponentInfo{com.netflix.mediaclient/com.netflix.mediaclient.ui.launch.UIWebViewActivity}" drawable="netflix" />
 
 </resources>
