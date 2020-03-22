@@ -156,4 +156,6 @@
 
     <item component="ComponentInfo{com.topjohnwu.magisk/a.c}" drawable="magisk" />
 
+    <item component="ComponentInfo{com.android.calendar/com.android.calendar.AllInOneActivity}" drawable="calendar" />
+
 </resources>
